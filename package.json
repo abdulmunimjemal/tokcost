@@ -1,5 +1,5 @@
 {
-  "name": "tok",
+  "name": "tokcost",
   "version": "0.1.0",
   "description": "An instant, offline token + cost counter for LLM text.",
   "keywords": [
@@ -13,7 +13,7 @@
   ],
   "type": "module",
   "bin": {
-    "tok": "./dist/cli.js"
+    "tokcost": "./dist/cli.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -38,11 +38,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abdulmunimjemal/tok.git"
+    "url": "git+https://github.com/abdulmunimjemal/tokcost.git"
   },
-  "homepage": "https://oss.munim.io/tok/",
+  "homepage": "https://oss.munim.io/tokcost/",
   "bugs": {
-    "url": "https://github.com/abdulmunimjemal/tok/issues"
+    "url": "https://github.com/abdulmunimjemal/tokcost/issues"
   },
   "dependencies": {
     "gpt-tokenizer": "^3.4.0",

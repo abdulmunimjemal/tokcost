@@ -1,5 +1,5 @@
 /**
- * tok — an instant, offline token + cost counter for LLM text.
+ * tokcost — an instant, offline token + cost counter for LLM text.
  *
  * Public library API. Counting is offline and deterministic via gpt-tokenizer;
  * no network and no API key are required.

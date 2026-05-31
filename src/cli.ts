@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * tok CLI — count tokens (and optionally estimate input cost) for LLM text.
+ * tokcost CLI — count tokens (and optionally estimate input cost) for LLM text.
  *
  * Usage:
- *   tok prompt.md                 count a file
- *   cat file | tok                count piped stdin
- *   echo "hi" | tok               count stdin
- *   tok a.md b.md                 per-file counts + a total
+ *   tokcost prompt.md                 count a file
+ *   cat file | tokcost                count piped stdin
+ *   echo "hi" | tokcost               count stdin
+ *   tokcost a.md b.md                 per-file counts + a total
  *
  * Exit codes: 0 ok, 2 on error (bad model / no input).
  */
@@ -25,11 +25,11 @@ import {
 
 const VERSION = "0.1.0";
 
-const HELP = `tok — an instant, offline token + cost counter for LLM text
+const HELP = `tokcost — an instant, offline token + cost counter for LLM text
 
 Usage:
-  tok [options] [files...]
-  cat file.md | tok [options]
+  tokcost [options] [files...]
+  cat file.md | tokcost [options]
 
 Options:
   -m, --model <name>   Model to count for (default: ${DEFAULT_MODEL}).
